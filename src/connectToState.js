@@ -1,8 +1,107 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import valid from "card-validator";
 import CCFieldFormatter from "./CCFieldFormatter";
 import CCFieldValidator from "./CCFieldValidator";
 import compact from "lodash.compact";
+
+valid.creditCardType.addCard({
+  niceType: "Alelo",
+  type: "alelo",
+  patterns: [
+    506699,
+    506700,
+    506701,
+    506702,
+    506703,
+    506704,
+    506705,
+    506706,
+    506709,
+    506710,
+    506711,
+    506712,
+    506713,
+    506714,
+    506716,
+    506737,
+    506738,
+    506754,
+    506755,
+    506756,
+    506757,
+    506758,
+    506759,
+    506760,
+    506761,
+    506762,
+    506763,
+    506764,
+    506765,
+    506766,
+    506767,
+    506769,
+    506770,
+    506771,
+    506772,
+    506773,
+  ],
+  gaps: [4, 8, 12],
+  lengths: [16],
+  code: {
+    name: "CVV",
+    size: 3,
+  },
+});
+
+valid.creditCardType.addCard({
+  niceType: "Vr",
+  type: "vr",
+  patterns: [
+    627416,
+    637036,
+    637037,
+  ],
+  gaps: [4, 8, 12],
+  lengths: [16],
+  code: {
+    name: "CVV",
+    size: 3,
+  },
+});
+
+valid.creditCardType.addCard({
+  niceType: "Ticket",
+  type: "ticket",
+  patterns: [
+    602651,
+    603342,
+  ],
+  gaps: [4, 8, 12],
+  lengths: [16],
+  code: {
+    name: "CVV",
+    size: 3,
+  },
+});
+
+valid.creditCardType.addCard({
+  niceType: "Sodexo",
+  type: "sodexo",
+  patterns: [
+    603389,
+    606068,
+    606069,
+    606071,
+  ],
+  gaps: [4, 8, 12],
+  lengths: [16],
+  code: {
+    name: "CVV",
+    size: 3,
+  },
+});
+
 
 export const InjectedProps = {
   focused: PropTypes.string,
