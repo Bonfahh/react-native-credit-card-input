@@ -27,6 +27,20 @@ valid.creditCardType.addCard({
 });
 
 valid.creditCardType.addCard({
+  niceType: "GiftCard",
+  type: "gift",
+  patterns: [
+    888888,
+  ],
+  gaps: [4, 8, 12],
+  lengths: [16],
+  code: {
+    name: "CVV",
+    size: 3,
+  },
+});
+
+valid.creditCardType.addCard({
   niceType: "Elo",
   type: "elo",
   patterns: [
