@@ -10,7 +10,7 @@ valid.creditCardType.addCard({
   type: "valecard",
   patterns: [60648, 60644],
   gaps: [4, 8, 12],
-  length: 16,
+  lengths: [16],
   code: {
     name: "CVV",
     size: 3,
