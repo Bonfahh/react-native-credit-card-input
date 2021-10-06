@@ -14,6 +14,7 @@ const Icons = {
   placeholder: require("./icons/stp_card_unknown.png"),
   visa: require("./icons/stp_card_visa.png"),
   gift: require("./icons/stp_card_gift.png"),
+  valecard: require("./icons/stp_card_valecard.png"),
 };
 
 export default Icons;

@@ -6,6 +6,18 @@ import CCFieldValidator from "./CCFieldValidator";
 import compact from "lodash.compact";
 
 valid.creditCardType.addCard({
+  niceType: "ValeCard",
+  type: "valecard",
+  patterns: [60648, 60644],
+  gaps: [4, 8, 12],
+  length: 16,
+  code: {
+    name: "CVV",
+    size: 3,
+  },
+});
+
+valid.creditCardType.addCard({
   niceType: "Alelo",
   type: "alelo",
   patterns: [
