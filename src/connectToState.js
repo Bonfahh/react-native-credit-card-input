@@ -8,9 +8,9 @@ import compact from "lodash.compact";
 valid.creditCardType.addCard({
   niceType: "ValeCard",
   type: "valecard",
-  patterns: [60648, 60644],
+  patterns: [60648, 60644, 6060000],
   gaps: [4, 8, 12],
-  lengths: [16],
+  lengths: [17],
   code: {
     name: "CVV",
     size: 3,
