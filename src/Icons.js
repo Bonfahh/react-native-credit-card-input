@@ -8,7 +8,6 @@ const Icons = {
   elo: require("./icons/stp_card_elo.png"),
   ticket: require("./icons/stp_card_ticket.png"),
   alelo: require("./icons/stp_card_alelo.png"),
-  sodexo: require("./icons/stp_card_sodexo.png"),
   vr: require("./icons/stp_card_vr.png"),
   jcb: require("./icons/stp_card_jcb.png"),
   placeholder: require("./icons/stp_card_unknown.png"),

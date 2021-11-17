@@ -126,23 +126,6 @@ valid.creditCardType.addCard({
   },
 });
 
-valid.creditCardType.addCard({
-  niceType: "Sodexo",
-  type: "sodexo",
-  patterns: [
-    603389,
-    606068,
-    606069,
-    606071,
-  ],
-  gaps: [4, 8, 12],
-  lengths: [16],
-  code: {
-    name: "CVV",
-    size: 3,
-  },
-});
-
 
 export const InjectedProps = {
   focused: PropTypes.string,
