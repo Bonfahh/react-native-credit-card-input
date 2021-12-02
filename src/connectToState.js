@@ -116,6 +116,7 @@ valid.creditCardType.addCard({
   type: "ticket",
   patterns: [
     602651,
+    603340,
     603342,
   ],
   gaps: [4, 8, 12],
