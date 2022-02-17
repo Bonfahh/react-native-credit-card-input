@@ -103,7 +103,7 @@ valid.creditCardType.addCard({
     637036,
     637037,
     637202,
-    637201
+    637201,
   ],
   gaps: [4, 8, 12],
   lengths: [16],
